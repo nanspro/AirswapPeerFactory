@@ -1,0 +1,6 @@
+type CreatePeer @entity {
+  id: ID!
+  peerContract: Bytes! # address
+  swapContract: Bytes! # address
+  peerContractOwner: Bytes! # address
+}

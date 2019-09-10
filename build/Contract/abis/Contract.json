@@ -1,0 +1,67 @@
+[
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_locator",
+        "type": "bytes32"
+      }
+    ],
+    "name": "has",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_swapContract",
+        "type": "address"
+      },
+      {
+        "name": "_peerContractOwner",
+        "type": "address"
+      }
+    ],
+    "name": "createPeer",
+    "outputs": [
+      {
+        "name": "peerContractAddress",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "peerContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "swapContract",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "peerContractOwner",
+        "type": "address"
+      }
+    ],
+    "name": "CreatePeer",
+    "type": "event",
+    "_alias": "CreatePeer"
+  }
+]
